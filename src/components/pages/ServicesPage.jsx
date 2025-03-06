@@ -65,7 +65,7 @@ const ServicesPage = () => {
               </h2>
               <Link
                 to="/practicetest"
-                className="py-4 bg-black text-white rounded-lg px-12  text-base poppins font-normal"
+                className="py-4 bg-[#1976d2] text-white rounded-lg px-12  text-base poppins font-normal"
               >
                 Start Practice Test
               </Link>
@@ -79,7 +79,7 @@ const ServicesPage = () => {
               </h1>
               <a
                 href=""
-                className="lg:py-4 py-2 bg-black text-white rounded-lg px-6  text-base poppins font-normal"
+                className="lg:py-3 py-2 bg-[#1976d2] text-white rounded-lg px-6  text-base poppins font-normal"
               >
                 View
               </a>
@@ -90,7 +90,7 @@ const ServicesPage = () => {
               </h1>
               <a
                 href=""
-                className="lg:py-4 py-2 bg-black text-white rounded-lg px-6   text-base poppins font-normal"
+                className="lg:py-3 py-2 bg-[#1976d2] text-white rounded-lg px-6   text-base poppins font-normal"
               >
                 View
               </a>
@@ -105,7 +105,7 @@ const ServicesPage = () => {
               <h2 className="font-semibold pb-1 poppins text-[#090909] xl:text-4xl md:text-2xl text-xl">
                 Make sure that its right option for you !
               </h2>
-              <p className="md:text-base text-sm text-black  font-medium">
+              <p className="md:text-base text-sm text-[#0000008a]  font-normal">
                 Once you’ve confirmed you can test online, be sure it’s the
                 right choice for your circumstances and environment. For
                 example, taking your exam with OnVUE means you’ll need to:
@@ -117,8 +117,8 @@ const ServicesPage = () => {
                     key={index}
                     className="flex items-center  flex-col text-center"
                   >
-                    <img src={service.imgSrc} alt={service.text} />
-                    <p className="text-base text-black font-medium capitalize">
+                    <img src={service.imgSrc} alt={service.text} className="w-8 h-8" />
+                    <p className="text-sm text-black font-medium capitalize">
                       {service.text}
                     </p>
                   </div>
@@ -152,7 +152,7 @@ const ServicesPage = () => {
                         {resource.title}
                       </h1>
                     </div>
-                    <h1 className="text-black md:text-lg text-base font-semibold text-center pt-2">
+                    <h1 className="text-[#0000008a] md:text-base text-sm font-normal text-center pt-2">
                       {resource.description}
                     </h1>
                   </div>

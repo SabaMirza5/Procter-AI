@@ -32,7 +32,7 @@ function Navbar({ toggleSidebar, isSidebarOpen }) {
             <li>Contact Us</li>
           </ul>
           </div>
-          <div className="bg-black p-4 rounded-full">
+          <div className=" bg-[#1976d2] p-4 rounded-full">
             <Link to="/chatpage"><img src={navlogo} alt="" /></Link>
           </div>
           

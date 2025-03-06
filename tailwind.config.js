@@ -13,6 +13,9 @@ export default {
         'bg-color':'#EFF4F1',  
         'links-color':'#0B0B29',  
         'heading-color':'#267FFE',  
+        'icon-color':'#0000008a',  
+        'bg-main':'#1976d2',
+        
       
       },
 

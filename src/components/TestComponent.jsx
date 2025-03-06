@@ -56,7 +56,7 @@ function TestComponent() {
                 {link.title}
               </h2>
             </div>
-            <h2 className="poppins font-normal md:text-[13px] text-[10px] text-black pt-2">
+            <h2 className="poppins font-normal md:text-[13px] text-[10px] text-[#0000008a] pt-2">
               {link.description}
             </h2>
           </div>

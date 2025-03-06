@@ -23,11 +23,11 @@ function Home() {
             <div className="md:m-7 m-3 sm:border border border-border-clr rounded-lg md:p-7 p-3 flex items-center gap-9 md:flex-row flex-col-reverse md:text-start text-center ">
               <img src={home1} alt="" />
               <div className="">
-                <h2 className="font-semibold poppins text-[#090909] lg:text-4xl md:text-3xl text-2xl">
+                <h2 className="font-semibold poppins text-[#090909] lg:text-3xl 2xl:text-4xl md:text-2xl text-2xl">
                   Welcome to the Smart Entry <br className="xl:block hidden" />{" "}
                   test Proctor
                 </h2>
-                <p className="pt-1 lg:text-[22px] md:text-lg text-base poppins font-normal">
+                <p className="pt-1 lg:text-base md:text-sm text-sm poppins font-normal text-[#0000008a]">
                   Proctored with Care, Prepared with Precision
                 </p>
               </div>

@@ -48,7 +48,7 @@ const ViewInstructionPage = () => {
               Adhere to these Instructions
             </p>
 
-            <ul className="md:text-base text-sm text-black font-normal list-disc space-y-2 p-5">
+            <ul className="md:text-base text-sm text-[#0000008a] font-normal list-disc space-y-2 p-5">
               {instructions.map((instruction, index) => (
                 <li key={index}>{instruction}</li>
               ))}
@@ -61,7 +61,7 @@ const ViewInstructionPage = () => {
             How to attempt questions?
             </p>
 
-            <ul className="md:text-base text-sm text-black font-normal list-disc space-y-2 p-5">
+            <ul className="md:text-base text-sm text-[#0000008a] font-normal list-disc space-y-2 p-5">
               {instructions2.map((instruction2, index) => (
                 <li key={index}>{instruction2}</li>
               ))}

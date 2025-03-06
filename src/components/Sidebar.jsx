@@ -26,41 +26,36 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         } md:translate-x-0 sidebar ${
           isOpen
             ? "w-28 sidebar-collapsed"
-            : "2xl:w-96 lg:w-80 sidebar-expanded"
+            : "2xl:w-96 lg:w-72 sidebar-expanded"
         }`}
       >
         <div
-          className={`flex flex-col items-center px-6 pt-16  ${
+          className={`flex flex-col items-center px-6 pt-10  ${
             isOpen ? "space-y-6" : ""
           }`}
         >
           <Link to="/home">
             <h1
-              className={`uppercase font-bold  text-black  text-center ${
-                isOpen ? "text-lg" : " text-[32px]"
+              className={`uppercase font-bold  text-[#1976d2]  text-center ${
+                isOpen ? "text-lg" : " text-2xl"
               }`}
             >
               PROCTOR AI{" "}
             </h1>
           </Link>
 
-          <nav className="w-full mt-16">
+          <nav className="w-full mt-10">
             <ul
-              className={`2xl:space-y-6 space-y-4 ${
+              className={`2xl:space-y-6 space-y-3 ${
                 isOpen ? "flex flex-col items-center" : ""
               }`}
             >
-              <li
-                className={isActive([
-                  "/",
-                 
-                ])}
-              >
+              <li className={isActive(["/"])}>
                 <Link
                   to="/"
                   className={`flex ${
-                    isOpen ? "justify-center p-3" : "py-4 pl-5"
-                  } text-links-color font-normal  rounded-md poppins text-lg gap-[10px] ${isActive(
+                    isOpen ? "justify-center p-3" : "py-3 pl-5"
+                  } text-links-color font-normal hover:text-blue-600 rounded-md poppins text-base gap-[10px] ${isActive(
                     [
                       "/",
                       // "/selection_page",
@@ -69,7 +64,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                     ]
                   )}`}
                 >
-                  <IoHome className="text-2xl" />
+                  {/* <IoHome className="text-xl text-[#0000008a]  " /> */}
+                  <IoHome className="text-xl text-black " />
                   {!isOpen && "Home"}
                 </Link>
               </li>
@@ -84,8 +80,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <Link
                   to="/dashboard"
                   className={`flex ${
-                    isOpen ? "justify-center p-3" : "py-4 pl-5"
-                  } text-links-color font-normal gradient-bg rounded-md poppins text-lg gap-[10px] ${isActive(
+                    isOpen ? "justify-center p-3" : "py-3 pl-5"
+                  } text-links-color font-normal gradient-bg hover:text-blue-600 rounded-md poppins text-base gap-[10px] ${isActive(
                     [
                       "/dashboard",
                       "/selection_page",
@@ -94,21 +90,16 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                     ]
                   )}`}
                 >
-                  <BiSolidDashboard className="text-2xl" />
+                  <BiSolidDashboard className="text-xl text-black" />
                   {!isOpen && "Dashboard"}
                 </Link>
               </li>
-              <li
-                className={isActive([
-                  "/servicepage",
-                
-                ])}
-              >
+              <li className={isActive(["/servicepage"])}>
                 <Link
                   to="/servicepage"
                   className={`flex ${
-                    isOpen ? "justify-center p-3" : "py-4 pl-5"
-                  } text-links-color rounded-md font-medium text-lg poppins gap-[10px] capitalize gradient-bg ${isActive(
+                    isOpen ? "justify-center p-3" : "py-3 pl-5"
+                  } text-links-color rounded-md font-medium  hover:text-blue-600 text-base poppins gap-[10px] capitalize gradient-bg ${isActive(
                     ["/servicepage"]
                   )}`}
                 >
@@ -135,42 +126,35 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <Link
                   to="/testpage"
                   className={`flex ${
-                    isOpen ? "justify-center p-3" : "py-4 pl-5"
-                  } text-links-color rounded-md font-medium text-lg poppins gap-[10px] capitalize gradient-bg ${isActive(
+                    isOpen ? "justify-center p-3" : "py-3 pl-5"
+                  } text-links-color rounded-md hover:text-blue-600 font-medium text-base poppins gap-[10px] capitalize gradient-bg ${isActive(
                     ["/testpage"]
                   )}`}
                 >
-                  <img src={test} alt="" />
+                  <img src={test} alt="" className="w-5 h-full" />
                   {!isOpen && "Tests"}
                 </Link>
               </li>
-              <li className={isActive(["/newspage","/newspagemain",])}>
+              <li className={isActive(["/newspage", "/newspagemain"])}>
                 <Link
                   to="/newspage"
                   className={`flex ${
-                    isOpen ? "justify-center p-3" : "py-4 pl-5"
-                  } text-links-color rounded-md font-medium text-lg poppins gap-[10px] capitalize gradient-bg ${isActive(
+                    isOpen ? "justify-center p-3" : "py-3 pl-5"
+                  } text-links-color rounded-md  hover:text-blue-600 font-medium text-base poppins gap-[10px] capitalize gradient-bg ${isActive(
                     ["/account_setting_page"]
                   )}`}
                 >
                   {/* <IoSettingsSharp className="text-2xl" /> */}
-                  <img src={update} alt="" />
+                  <img src={update} alt="" className="w-5 h-full  " />
                   {!isOpen && "News & Updates"}
                 </Link>
               </li>
-              <li className={isActive([
-                "/helppage",
-                "/helppagemain"
-                
-                
-                
-                
-                ])}>
+              <li className={isActive(["/helppage", "/helppagemain"])}>
                 <Link
                   to="/helppage"
                   className={`flex ${
-                    isOpen ? "justify-center p-3" : "py-4 pl-5"
-                  } text-links-color rounded-md font-medium text-lg poppins gap-[10px] capitalize gradient-bg ${isActive(
+                    isOpen ? "justify-center p-3" : "py-3 pl-5"
+                  } text-links-color rounded-md hover:text-blue-600 font-medium text-base poppins gap-[10px] capitalize gradient-bg ${isActive(
                     ["/helppage"]
                   )}`}
                 >
@@ -191,12 +175,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <Link
                   to="/profilepage"
                   className={`flex ${
-                    isOpen ? "justify-center p-3" : "py-4 pl-5"
-                  } text-links-color rounded-md font-medium text-lg poppins gap-[10px] capitalize gradient-bg ${isActive(
+                    isOpen ? "justify-center p-3" : "py-3 pl-5"
+                  } text-links-color rounded-md hover:text-blue-600 font-medium text-base poppins gap-[10px] capitalize gradient-bg ${isActive(
                     ["/profilepage"]
                   )}`}
                 >
-                  <FaUser className="text-2xl" />
+                  <FaUser className="text-xl text-black" />
                   {!isOpen && "Profile"}
                 </Link>
               </li>
@@ -207,7 +191,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
       {/* Sidebar for mobile screens */}
       <div
-        className={`bg-white shadow-md lg:hidden h-screen fixed top-0 overflow-y-auto hide-scrollbar  w-72 left-0  transition-transform duration-300 z-50 sidebar-mobile ${
+        className={`bg-white shadow-md lg:hidden h-screen fixed top-0 overflow-y-auto hide-scrollbar  w-64 left-0  transition-transform duration-300 z-50 sidebar-mobile ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -219,22 +203,21 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             />
           </div>
 
-          <h1 className="uppercase font-bold  text-black  text-center   text-[32px]">
+          <h1 className="uppercase font-bold  text-[#1976d2]  text-center   text-xl">
             PROCTOR AI{" "}
           </h1>
 
-          <nav className="w-full mt-10">
+          <nav className="w-full mt-5">
             <ul className="space-y-2 flex flex-col">
               <li
                 className={isActive([
-                  "/dashboard",
-                  "/selection_page",
-                  "/new_projects",
+                  "/",
+                  
                 ])}
               >
                 <Link
-                  to="/dashboard"
-                  className="flex py-4 pl-5 text-links-color font-normal items-center gradient-bg rounded-md poppins text-lg gap-[10px] ${isActive(['/dashboard', '/selection_page', '/new_projects'])}"
+                  to="/"
+                  className="flex py-2 pl-5 text-links-color font-normal items-center gradient-bg rounded-md poppins text-base gap-[10px] ${isActive(['/'])}"
                 >
                   <IoHome className="text-2xl" />
                   Home
@@ -249,7 +232,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               >
                 <Link
                   to="/dashboard"
-                  className="flex py-4 pl-5 text-links-color font-normal items-center gradient-bg rounded-md poppins text-lg gap-[10px] ${isActive(['/dashboard', '/selection_page', '/new_projects'])}"
+                  className="flex py-2 pl-5 text-links-color font-normal items-center gradient-bg rounded-md poppins text-base gap-[10px] ${isActive(['/dashboard', '/selection_page', '/new_projects'])}"
                 >
                   <BiSolidDashboard className="text-2xl" />
                   Dashboard
@@ -262,10 +245,10 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 ])}
               >
                 <Link
-                  to="/saved_searching_page"
-                  className="flex items-center py-4 pl-5 text-links-color rounded-md font-medium text-lg poppins gap-[10px] capitalize gradient-bg ${isActive(['/saved_searching_page', '/detail_card_page'])}"
+              to="/servicepage"
+                  className="flex items-center py-2 pl-5 text-links-color rounded-md font-medium text-base poppins gap-[10px] capitalize gradient-bg ${isActive(['/saved_searching_page', '/detail_card_page'])}"
                 >
-                   <svg
+                  <svg
                     width="28"
                     height="28"
                     viewBox="0 0 28 28"
@@ -282,70 +265,58 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                   Services
                 </Link>
               </li>
-              <li className={isActive(["/recent_viewed_page"])}>
+              <li className={isActive(["/testpage"])}>
                 <Link
-                  to="/recent_viewed_page"
-                  className="flex items-center py-4 pl-5 text-links-color rounded-md font-medium text-lg poppins gap-[10px] capitalize gradient-bg ${isActive(['/recent_viewed_page'])}"
+                  to="/testpage"
+                  className="flex items-center py-2 pl-5 text-links-color rounded-md font-medium text-base poppins gap-[10px] capitalize gradient-bg ${isActive(['/recent_viewed_page'])}"
                 >
-                    <img src={test} alt="" />
-          Tests
+                  <img src={test} alt="" />
+                  Tests
                 </Link>
               </li>
-              <li className={isActive(["/account_setting_page"])}>
+              <li className={isActive(["/newspage", "/newspagemain"])}>
                 <Link
-                  to="/account_setting_page"
-                  className="flex items-center py-4 pl-5 text-links-color rounded-md font-medium text-lg poppins gap-[10px] capitalize gradient-bg ${isActive(['/account_setting_page'])}"
+                  to="/newspage"
+                  className="flex items-center py-2 pl-5 text-links-color rounded-md font-medium text-base poppins gap-[10px] capitalize gradient-bg ${isActive(['/account_setting_page'])}"
                 >
-                   <img src={update} alt="" />
-                   News & Updates
+                  <img src={update} alt="" />
+                  News & Updates
                 </Link>
               </li>
-              <li className={isActive(["/create_new_user_page"])}>
+              <li className={isActive(["/helppage", "/helppagemain"])}>
                 <Link
-                  to="/create_new_user_page"
-                  className="flex items-center py-4 pl-5 text-links-color rounded-md font-medium text-lg poppins gap-[10px] capitalize gradient-bg ${isActive(['/create_new_user_page'])}"
+                  to="/helppage"
+                  className="flex items-center py-2 pl-5 text-links-color rounded-md font-medium text-base poppins gap-[10px] capitalize gradient-bg ${isActive(['/create_new_user_page'])}"
                 >
-                   <img src={help} alt="" />
-                Help
+                  <img src={help} alt="" />
+                  Help
                 </Link>
               </li>
 
-
-              <h1
-                className="text-base font-normal text-black poppins ml-5 text-start"
-              
-            
-              >
+              <h1 className="text-base font-normal text-black poppins ml-5 text-start">
                 Account Page{" "}
               </h1>
 
-
-              <li className={isActive(["/create_new_user_page"])}>
+              <li className={isActive(["/profilepage"])}>
                 <Link
-                  to="/create_new_user_page"
-                  className="flex items-center py-4 pl-5 text-links-color rounded-md font-medium text-lg poppins gap-[10px] capitalize gradient-bg ${isActive(['/create_new_user_page'])}"
+                  to="/profilepage"
+                  className="flex items-center py-2 pl-5 text-links-color rounded-md font-medium text-base poppins gap-[10px] capitalize gradient-bg ${isActive(['/profilepage'])}"
                 >
-               <FaUser className="text-2xl" />
-             Profile
+                  <FaUser className="text-2xl" />
+                  Profile
                 </Link>
               </li>
-
-
-
             </ul>
 
-
-
-<div className="sm:hidden block">
-            <hr />
-            <ul className="ml-8 space-y-5 mt-5 text-black font-medium text-base">
-            <li>Home</li>
-            <li>Contact Us</li>
-            <li>FAQs</li>
-            <li>privacy Policy</li>
-            <li>Cookie Settings</li>
-
-            </ul>
+            <div className="sm:hidden block">
+              <hr />
+              <ul className="ml-8 space-y-3 mt-6 text-black font-normal text-base">
+                <li>Home</li>
+                <li>Contact Us</li>
+                <li>FAQs</li>
+                <li>privacy Policy</li>
+                <li>Cookie Settings</li>
+              </ul>
             </div>
           </nav>
         </div>

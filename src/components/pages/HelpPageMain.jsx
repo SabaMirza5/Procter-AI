@@ -46,7 +46,7 @@ const HelpPageMain = () => {
               <img src={help2} alt="" />
               <h1 className=" text-black font-semibold poppins text-xl flex flex-col gap-2">
                 Got a Question?
-                <p className="font-normal text-black md:text-lg text-sm ">
+                <p className="font-normal text-[#0000008a] md:text-base  text-sm ">
                   We’re here to help
                 </p>
               </h1>
@@ -56,7 +56,7 @@ const HelpPageMain = () => {
                 What is the Smart Entry Test Proctor System?
               </h1>
 
-              <p className="font-normal text-black md:text-lg text-sm pt-1  ">
+              <p className="font-normal text-[#0000008a] md:text-base  text-sm pt-1  ">
                 A robust platform designed to automate and streamline key
                 academic processes, including course registration, exam
                 administration, and result processing. This ensures enhanced
@@ -81,7 +81,7 @@ const HelpPageMain = () => {
                     <h1 className="md:text-xl text-sm text-black font-semibold poppins flex items-center justify-between">
                       {option.title}
                     </h1>
-                    <h1 className="text-black md:text-base text-xs font-normal poppins">
+                    <h1 className="text-[#0000008a] md:text-sm  text-xs font-light poppins">
                       {option.description}
                     </h1>
                   </div>
@@ -99,7 +99,7 @@ const HelpPageMain = () => {
                 <h2 className="text-black md:text-xl text-base font-semibold">
                   What to do if you encounter issues
                 </h2>
-                <p className="font-normal text-black md:text-lg text-sm   pt-1">
+                <p className="font-normal text-[#0000008a] md:text-base  text-sm   pt-1">
                   Solutions for common technical issues like login problems,
                   registration troubles, or exam difficulties.
                 </p>
@@ -109,7 +109,7 @@ const HelpPageMain = () => {
                 <h2 className="text-black md:text-xl text-base font-semibold">
                   How to contact support
                 </h2>
-                <p className="font-normal text-black md:text-lg text-sm   pt-1">
+                <p className="font-normal text-[#0000008a] md:text-base  text-sm   pt-1">
                   Information on how to reach out for technical assistance or
                   other queries related to system usage.
                 </p>
@@ -120,10 +120,10 @@ const HelpPageMain = () => {
                 href=""
                 className="flex items-center justify-center  flex-col p-4 text-center border  border-border-clr rounded-lg w-full "
               >
-                <h2 className="text-black xl:text-xl text-sm font-bold">
+                <h2 className="text-[#0000008a] md:text-base  text-sm font-semibold">
                   Still confusing?
                 </h2>
-                <p className="font-bold text-black xl:text-2xl text-base">
+                <p className="font-bold text-black xl:text-xl text-base">
                   Ask your Chatbot here !
                 </p>
               </a>
@@ -162,7 +162,7 @@ const HelpPageMain = () => {
                 </h2>
               <div className="border border-border-clr rounded-lg p-4 ">
                
-                <p className="font-normal text-black md:text-base text-sm ">
+                <p className="font-normal text-[#0000008a] md:text-base  text-sm ">
                 Log in to your account and navigate the dashboard to access key features like fee status, exam schedules, and information dashboards, helping you stay informed and manage your academic progress.
                 </p>
                 </div>
@@ -175,7 +175,7 @@ const HelpPageMain = () => {
                 </h2>
               <div className="border border-border-clr rounded-lg p-4 ">
                
-                <p className="font-normal text-black md:text-base text-sm ">
+                <p className="font-normal text-[#0000008a] md:text-base  text-sm ">
                 Receive your exam results instantly in the "Results" section. The post-exam analysis report offers insights into your performance, highlighting strengths and areas for improvement.
                 </p>
                 </div>
@@ -189,7 +189,7 @@ const HelpPageMain = () => {
                 </h2>
               <div className="border border-border-clr rounded-lg p-4 ">
                
-                <p className="font-normal text-black md:text-base text-sm ">
+                <p className="font-normal text-[#0000008a] md:text-base  text-sm ">
                 To ensure exam integrity, copying and pasting is prohibited, and eye movements are monitored. Multiple warnings will lead to escalating consequences, including possible disqualification.
                 </p>
                 </div>

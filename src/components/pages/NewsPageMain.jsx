@@ -35,14 +35,14 @@ const NewsPageMain = () => {
                 <h1 className="text-xl text-black font-semibold poppins capitalize">
                   System Enhancements
                 </h1>
-                <div className="border border-border-clr rounded-lg">
-                  <p className="font-normal text-black md:text-lg text-sm py-4 text-center ">
+                <div className="border border-[#1976d2] rounded-lg">
+                  <p className="font-normal text-[#1976d2] md:text-base text-sm py-3 text-center ">
                     New Features Introduced
                   </p>
                 </div>
 
-                <div className="border border-border-clr rounded-lg">
-                  <p className="font-normal text-black md:text-lg text-sm py-4 text-center ">
+                <div className="border border-[#1976d2] rounded-lg">
+                  <p className="font-normal text-[#1976d2] md:text-base text-sm py-3 text-center ">
                     Upcoming System Improvements
                   </p>
                 </div>
@@ -62,7 +62,7 @@ const NewsPageMain = () => {
                 <h2 className="text-black md:text-lg text-sm  font-semibold">
                   Upcoming Registration Deadlines
                 </h2>
-                <p className="font-normal text-black md:text-lg text-sm   pt-1">
+                <p className="font-normal text-[#0000008a] md:text-base text-sm   pt-1">
                   Alerts about key dates for course registration, exam
                   schedules, and other critical timelines
                 </p>
@@ -72,7 +72,7 @@ const NewsPageMain = () => {
                 <h2 className="text-black md:text-lg text-sm  font-semibold">
                   System Maintenance Notices
                 </h2>
-                <p className="font-normal text-black md:text-lg text-sm   pt-1">
+                <p className="font-normal text-[#0000008a] md:text-base text-sm   pt-1">
                   Information about scheduled maintenance periods and how they
                   may affect system availability.
                 </p>
@@ -89,7 +89,7 @@ const NewsPageMain = () => {
                 <h2 className="text-black md:text-xl text-base font-semibold">
                   Changes to Security Protocols
                 </h2>
-                <p className="font-normal text-black md:text-lg text-sm   pt-1">
+                <p className="font-normal text-[#0000008a] md:text-base text-sm   pt-1">
                   Updates on security adjustments during exams, including
                   stricter monitoring and new test-taking restrictions.
                 </p>
@@ -99,7 +99,7 @@ const NewsPageMain = () => {
                 <h2 className="text-black md:text-xl text-base font-semibold">
                   Revisions to Privacy Policy
                 </h2>
-                <p className="font-normal text-black md:text-lg text-sm   pt-1">
+                <p className="font-normal text-[#0000008a] md:text-base  text-sm   pt-1">
                   Notifications regarding changes to how user data is handled,
                   ensuring compliance with the latest privacy standards.
                 </p>
@@ -116,7 +116,7 @@ const NewsPageMain = () => {
                 <h2 className="text-black md:text-xl text-base font-semibold">
                   Opportunities to Provide Feedback
                 </h2>
-                <p className="font-normal text-black md:text-lg text-sm   pt-1">
+                <p className="font-normal text-[#0000008a] md:text-base  text-sm   pt-1">
                   Invitations for users to share their experiences and
                   suggestions for further improvements to the system.
                 </p>
@@ -126,7 +126,7 @@ const NewsPageMain = () => {
                 <h2 className="text-black md:text-xl text-base font-semibold">
                   Survey Results
                 </h2>
-                <p className="font-normal text-black md:text-lg text-sm   pt-1">
+                <p className="font-normal text-[#0000008a] md:text-base  text-sm   pt-1">
                   Summaries of user feedback and its impact on system
                   improvements.
                 </p>

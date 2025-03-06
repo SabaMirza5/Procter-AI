@@ -88,7 +88,7 @@ const ProfilePage = () => {
               <img
                 src={profileImage || "https://via.placeholder.com/64"}
                 alt="User Profile"
-                className="md:h-32 md:w-32 h-20 w-20 rounded-full object-cover"
+                className="md:h-28 md:w-28 h-20 w-20 rounded-full object-cover"
               />
               <div
                 className="absolute shadow-2xl top-0 right-0 md:w-8 md:h-8 h-5 w-5 bg-white border border-gray-300 rounded-full flex items-center justify-center cursor-pointer"
@@ -105,20 +105,20 @@ const ProfilePage = () => {
               />
             </div>
             <div className="md:space-y-3 space-y-1">
-              <h2 className="poppins font-semibold lg:text-4xl md:text-2xl text-lg capitalize text-black">
+              <h2 className="poppins font-semibold lg:text-3xl md:text-2xl text-lg capitalize text-black">
                 {userDetails.username}
               </h2>
-              <h1 className="poppins font-normal lg:text-xl text-sm text-black">
+              <h1 className="poppins font-normal lg:text-base text-sm text-black">
                 {userDetails.email}
               </h1>
-              <h1 className="poppins font-normal lg:text-xl text-sm text-black">
+              <h1 className="poppins font-normal lg:text-base text-sm text-[#0000008a]">
                 {userDetails.cnic}
               </h1>
             </div>
 
             <div className="flex items-center gap-2">
               <input type="radio" name="" id="" className="accent-[#128E0C]" />
-              <h1 className="poppins font-normal lg:text-xl text-sm text-black ">
+              <h1 className="poppins font-normal lg:text-base text-sm text-black ">
                 Active
               </h1>
             </div>
@@ -140,7 +140,7 @@ const ProfilePage = () => {
                       Edit Details
                     </button>
                   </h1>
-                  <h1 className="text-black md:text-base text-sm font-normal poppins">
+                  <h1 className="text-[#0000008a] md:text-sm  text-xs  font-normal poppins">
                     {userDetails.username}
                   </h1>
                 </div>
@@ -148,7 +148,7 @@ const ProfilePage = () => {
                   <h1 className="md:text-xl text-base text-black font-semibold poppins capitalize">
                     Email Address
                   </h1>
-                  <h1 className="text-black md:text-base text-sm font-normal poppins">
+                  <h1 className="text-[#0000008a] md:text-sm  text-xs  font-normal poppins">
                     {userDetails.email}
                   </h1>
                 </div>
@@ -156,7 +156,7 @@ const ProfilePage = () => {
                   <h1 className="md:text-xl text-base text-black font-semibold poppins uppercase">
                     CNIC
                   </h1>
-                  <h1 className="text-black md:text-base text-sm font-normal poppins">
+                  <h1 className="text-[#0000008a] md:text-sm  text-xs  font-normal poppins">
                     {userDetails.cnic}
                   </h1>
                 </div>
@@ -164,7 +164,7 @@ const ProfilePage = () => {
                   <h1 className="md:text-xl text-base text-black font-semibold poppins capitalize">
                     Course
                   </h1>
-                  <h1 className="text-black md:text-base text-sm font-normal poppins capitalize">
+                  <h1 className="text-[#0000008a] md:text-sm  text-xs  font-normal poppins">
                     {userDetails.course}
                   </h1>
                 </div>
@@ -172,7 +172,7 @@ const ProfilePage = () => {
                   <h1 className="md:text-xl text-base text-black font-semibold poppins capitalize">
                     Fee Status
                   </h1>
-                  <h1 className="text-black md:text-base text-sm font-normal poppins capitalize">
+                  <h1 className="text-[#0000008a] md:text-sm  text-xs  font-normal poppins">
                     {userDetails.feeStatus}
                   </h1>
                 </div>
@@ -188,7 +188,7 @@ const ProfilePage = () => {
                   <h1 className="md:text-xl text-base text-black font-semibold poppins flex items-center justify-between">
                     First access to site
                   </h1>
-                  <h1 className="text-black md:text-base text-sm font-normal poppins">
+                  <h1 className=" poppins text-[#0000008a] md:text-sm  text-xs  font-normal poppins">
                     Saturday, 6 November 2021, 3:19 PM (2 years 286 days)
                   </h1>
                 </div>
@@ -196,7 +196,7 @@ const ProfilePage = () => {
                   <h1 className="md:text-xl text-base text-black font-semibold poppins capitalize">
                     Last access to site
                   </h1>
-                  <h1 className="text-black md:text-base text-sm font-normal poppins">
+                  <h1 className="text-[#0000008a] md:text-sm  text-xs  font-normal poppins">
                     Monday, 19 August 2024, 2:54 AM  (9 secs)
                   </h1>
                 </div>
@@ -219,7 +219,7 @@ const ProfilePage = () => {
                       <h1 className="md:text-xl text-sm text-black font-semibold poppins flex items-center justify-between">
                         {option.title}
                       </h1>
-                      <h1 className="text-black md:text-base text-xs font-normal poppins">
+                      <h1 className=" poppins    text-[#0000008a] md:text-sm  text-xs  font-normal poppins">
                         {option.description}
                       </h1>
                     </div>

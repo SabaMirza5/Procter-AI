@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Sidebar from "../Sidebar";
@@ -17,11 +15,8 @@ const TestsPage = () => {
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <div className=" flex-1 overflow-x-hidden">
         <Navbar toggleSidebar={toggleSidebar} />
-      
-           
-          <TestComponent />
-       
-     
+
+        <TestComponent />
       </div>
     </div>
   );

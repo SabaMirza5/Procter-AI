@@ -140,7 +140,7 @@ const PracticeTest = () => {
                     (option, index) => (
                       <div
                         key={index}
-                        className="flex items-center gap-3 text-base text-black font-normal"
+                        className="flex items-center gap-3 text-base text-[#0000008a] font-normal"
                       >
                         <input
                           type="radio"
@@ -158,22 +158,22 @@ const PracticeTest = () => {
                   )}
                 </div>
 
-                <button className="text-base capitalize lg:w-[20%] md:w-[50%] w-[70%] font-medium bg-black text-white py-4 mt-5  rounded-lg">
+                <button className="text-base capitalize lg:w-[20%] md:w-[50%] w-[70%] font-medium bg-[#1976d2] text-white py-3 mt-5  rounded-lg">
                   Add Comments
                 </button>
               </div>
               <div className="lg:w-[15%] md:w-[30%] w-full flex items-center  text-center  ">
-                <button className="text-base text-black font-medium border border-black py-4 w-full rounded-lg">
+                <button className="text-base text-[#1976d2] font-medium border border-[#1976d2] py-3 w-full rounded-lg">
                   Shuffle Subjects
                 </button>
               </div>
             </div>
             <div className="md:mt-32 mt-20">
               <div className="flex items-end mb-5 md:justify-end  gap-5 md:flex-col flex-row">
-                <button className="text-base  capitalize md:w-[20%] w-1/2 font-medium bg-black text-white py-4   rounded-lg">
+                <button className="text-base  capitalize md:w-[20%] w-1/2 font-medium bg-[#1976d2] text-white py-3   rounded-lg">
                   Calculator
                 </button>
-                <button className="text-base  capitalize md:w-[20%] w-1/2 font-medium bg-black text-white py-4   rounded-lg">
+                <button className="text-base  capitalize md:w-[20%] w-1/2 font-medium bg-[#1976d2] text-white py-3   rounded-lg">
                   White Board
                 </button>
               </div>

@@ -262,7 +262,7 @@ const ChatBox = () => {
                 />
                 <button
                   onClick={sendMessage}
-                  className=" px-4 py-2 bg-black text-white rounded-lg "
+                  className=" px-4 py-2 bg-[#1976d2] text-white rounded-lg "
                 >
                   Send
                 </button>

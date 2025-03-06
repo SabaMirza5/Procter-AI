@@ -48,7 +48,7 @@ const Dashboard = () => {
             <h1 className="poppins font-semibold md:text-xl text-sm text-black">
               {card.title}
             </h1>
-            <h1 className="poppins font-normal md:text-[13px] text-[10px] text-black ">
+            <h1 className="poppins font-normal md:text-[13px] text-[10px] text-[#0000008a] ">
               {card.description}
             </h1>
           </div>

@@ -14,7 +14,7 @@ function HelpComponent() {
           Need Some Help?
           </h2>
           
-          <a href="/helppagemain" className=" w-full  border border-border-clr text-black  text-base font-normal poppins py-3 px-10 rounded">
+          <a href="/helppagemain" className=" w-full  border border-border-clr text-[#0000008a]  text-sm font-normal poppins py-3 px-10 rounded">
           Our Help is just a click away Ask us twice!
           </a>
         </div>
